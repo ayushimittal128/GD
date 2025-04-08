@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/" element={<LearnSection />} />
-        <Route path="/" element={<ModuleSection />} />
-        <Route path="/" element={<StudySection/>}/>
+        <Route path="/learn" element={<LearnSection />} />
+        <Route path="/module" element={<ModuleSection />} />
+        <Route path="/study" element={<StudySection/>}/>
         
         {/* "Take a Tour" Dynamic Page */}
         <Route path="/take-a-tour/:pageType" element={<TakeaTourPage />} />

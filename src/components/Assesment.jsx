@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
-function Assessment() {
+function Assessment({onTakeTour}) {
   return (
     <div className="relative bg-white flex items-center justify-center py-12">
      
@@ -19,7 +19,8 @@ function Assessment() {
             various formats such as essays, reports, projects, and
             problem-solving tasks.
           </p>
-          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
+          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800"
+          onClick={onTakeTour}>
             Take a Tour
           </button>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
-function ModuleSection() {
-  const navigate = useNavigate();
+
+function ModuleSection({onTakeTour}) {
+  
 
   return (
     <div className="relative bg-white flex items-center justify-center py-12">
@@ -24,7 +24,7 @@ function ModuleSection() {
           </p>
           <button
             className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800"
-            onClick={() => navigate("/take-a-tour/module")}
+            onClick={onTakeTour}
           >
             Take a Tour
           </button>

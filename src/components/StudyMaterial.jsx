@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
-function StudySection() {
-  const navigate = useNavigate();
+
+function StudySection({onTakeTour}) {
+
 
   return (
     <div className="relative bg-white flex items-center justify-center py-12">
@@ -17,7 +17,7 @@ function StudySection() {
             audios, docs, URLs, YouTube links, and text boxes, helping shisyas
             deepen their understanding with valuable references.
           </p>
-          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800" onClick={()=> navigate("/take-a-tour/learning-path")}>
+          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800" onClick={onTakeTour}>
             Take a Tour
           </button>
         </div>
